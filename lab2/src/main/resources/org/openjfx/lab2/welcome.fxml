@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="240.0" prefWidth="320.0"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.openjfx.lab2.controller.WelcomeController">
+
+    <children>
+        <Label fx:id="welcomeLabel"
+               layoutX="60.0" layoutY="100.0"
+               prefWidth="200.0"
+               alignment="CENTER"
+               text="Welcome to the GCM system!">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
