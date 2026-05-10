@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paramsScreen"
+            prefHeight="240.0" prefWidth="320.0"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.openjfx.lab3.controller.ParamsController">
+
+    <children>
+        <Label layoutX="20.0" layoutY="20.0" text="Login Settings">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Label>
+
+        <Label layoutX="20.0" layoutY="55.0"
+               text="Max failed attempts (n):"/>
+        <TextField fx:id="nField"
+                   layoutX="200.0" layoutY="50.0"
+                   prefWidth="100.0"
+                   promptText="e.g. 3"/>
+
+        <Label layoutX="20.0" layoutY="95.0"
+               text="Block time in seconds (t):"/>
+        <TextField fx:id="tField"
+                   layoutX="200.0" layoutY="90.0"
+                   prefWidth="100.0"
+                   promptText="e.g. 10"/>
+
+        <Label fx:id="errorLabel"
+               layoutX="20.0" layoutY="135.0"
+               prefWidth="280.0"
+               text="" />
+
+        <Button layoutX="125.0" layoutY="170.0"
+                text="continue"
+                onAction="#onContinueClick"/>
+    </children>
+</AnchorPane>
